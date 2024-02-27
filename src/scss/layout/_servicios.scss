@@ -2,6 +2,11 @@
 @use './base/globales' as g;
 @use './base/mixins' as m;
 
+.lorem {
+    padding: 10rem;
+}
+
+
 .servicios {
     background-color: #fafafa;
     text-align: center;
@@ -14,10 +19,10 @@
     }
 }
 
-
 .bgservicios {
     margin-top: 5rem;
     border-radius: 1rem;
+    padding-bottom: 1rem;
 
 
     @include m.tablet {
@@ -29,7 +34,7 @@
         padding-top: 1rem;     
         margin-top: 5rem;
         margin-bottom: 5rem;
-        max-height: 45rem;
+        max-height: 85rem;
         max-width: 50rem;
         border: solid 0.2em;
         border-color: v.$secundario2;
@@ -41,11 +46,15 @@
         .icon {
             filter: drop-shadow(1px 0px 2px v.$principal);
             stroke: v.$secundario2;
+            padding-top: 2rem;
         }
         h3 {
             color: v.$secundario2;
             text-shadow: 1px 0px 3px v.$principal;
         }        
+        p {
+            padding: 10px 50px 20px;
+        }
     }
     
 }

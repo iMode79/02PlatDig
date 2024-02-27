@@ -9,18 +9,23 @@
     height: 16rem;
     flex-direction: row;
     justify-content: space-between;
-    
+
+    .logoflex, .navegacion_git {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .icono {
-        width: 22rem;
-        height: 15rem;
-        padding-top: 2rem;
+        max-width: 20rem;
+        max-height: 15rem;
+        //padding-top: 2rem;        
     }
 
     .GitHub {
         background: linear-gradient(v.$secundario, v.$secundario2); 
-        padding: 2rem;
+        //padding: 1rem;
         color: white;
-        font-size: medium;
+        font-size: 1.1rem;
     }
 
     a {
@@ -40,14 +45,6 @@
         transition: 250ms;
     }
 
-    .navegacion_git {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-
-
     @include m.tablet {
         .navegacion {
             display: flex;
@@ -55,6 +52,17 @@
             align-items: center;
             justify-content: center; 
             gap: 2rem;
+        }       
+        .icono {
+            max-width: 20rem;
+            max-height: 15rem;
+            //padding-top: 2rem;        
+        }
+        .GitHub {
+            background: linear-gradient(v.$secundario, v.$secundario2); 
+            //padding: 1.5rem;
+            color: white;
+            font-size: 1.5rem;            
         }
     }
 }

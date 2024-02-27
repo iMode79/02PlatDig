@@ -9,6 +9,11 @@ html {
 *, *::before, *::after{
     box-sizing: inherit;
 }
+//body
+body {
+    font-family: v.$fuentePrincipal;
+    font-size: 1.6rem;
+}
 //Contenedor indispensable
 .contenedor {
     width: 95%;

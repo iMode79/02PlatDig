@@ -7,6 +7,11 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
+
 .contenedor {
   width: 95%;
   max-width: 120rem;
@@ -361,7 +366,7 @@ template {
 }
 
 .header {
-  background-image: url(/img/computer.jpg);
+  background-image: url(../../img/computer.jpg);
   height: 500px;
   padding: 5rem;
   background-size: cover;
@@ -376,7 +381,6 @@ template {
   font-size: 5.9rem;
   color: #0b2246;
   text-shadow: -1px 2px 7px #d4cfcf;
-  text-decoration-line: overline;
   margin: 0;
   padding-bottom: 0.5rem;
 }
@@ -413,16 +417,19 @@ template {
   flex-direction: row;
   justify-content: space-between;
 }
+.encabezado .logoflex, .encabezado .navegacion_git {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .encabezado .icono {
-  width: 22rem;
-  height: 15rem;
-  padding-top: 2rem;
+  max-width: 20rem;
+  max-height: 15rem;
 }
 .encabezado .GitHub {
   background: linear-gradient(#d4cfcf, #3b619a);
-  padding: 2rem;
   color: white;
-  font-size: medium;
+  font-size: 1.1rem;
 }
 .encabezado a {
   display: block;
@@ -439,11 +446,6 @@ template {
   color: #d4cfcf;
   transition: 250ms;
 }
-.encabezado .navegacion_git {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 @media (min-width: 768px) {
   .encabezado .navegacion {
     display: flex;
@@ -451,6 +453,15 @@ template {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+  }
+  .encabezado .icono {
+    max-width: 20rem;
+    max-height: 15rem;
+  }
+  .encabezado .GitHub {
+    background: linear-gradient(#d4cfcf, #3b619a);
+    color: white;
+    font-size: 1.5rem;
   }
 }
 
@@ -471,6 +482,10 @@ template {
   }
 }
 
+.lorem {
+  padding: 10rem;
+}
+
 .servicios {
   background-color: #fafafa;
   text-align: center;
@@ -486,6 +501,7 @@ template {
 .bgservicios {
   margin-top: 5rem;
   border-radius: 1rem;
+  padding-bottom: 1rem;
 }
 @media (min-width: 768px) {
   .bgservicios {
@@ -498,7 +514,7 @@ template {
   padding-top: 1rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  max-height: 45rem;
+  max-height: 85rem;
   max-width: 50rem;
   border: solid 0.2em;
   border-color: #3b619a;
@@ -510,8 +526,12 @@ template {
 .bgservicios .contenedor2 .icon {
   filter: drop-shadow(1px 0px 2px #0b2246);
   stroke: #3b619a;
+  padding-top: 2rem;
 }
 .bgservicios .contenedor2 h3 {
   color: #3b619a;
   text-shadow: 1px 0px 3px #0b2246;
+}
+.bgservicios .contenedor2 p {
+  padding: 10px 50px 20px;
 }

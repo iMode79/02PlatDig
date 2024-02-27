@@ -5,7 +5,7 @@
 //Estilos Header, Hero Section
 
 .header {
-    background-image: url(/img/computer.jpg);
+    background-image: url(../../img/computer.jpg);
     height: 500px;
     padding: 5rem;
     background-size: cover;
@@ -19,8 +19,7 @@
     h1 {
         font-size: 5.9rem;
         color: v.$principal;
-        text-shadow:-1px 2px 7px v.$secundario; 
-        text-decoration-line: overline;        
+        text-shadow:-1px 2px 7px v.$secundario;         
         margin: 0;
         padding-bottom: .5rem;
     }
