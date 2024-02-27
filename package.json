@@ -1,0 +1,22 @@
+{
+  "name": "plataformas_digitales",
+  "version": "1.0.1",
+  "description": "Versión actualizada con sass y gulp",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "css": "gulp css"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "Ricardo Labrada",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.71.1"
+  }
+}

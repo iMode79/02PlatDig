@@ -1,0 +1,52 @@
+@use 'base/variables' as v;
+
+//Reseteo de html
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+//Ajusto generico multiplat
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+//Contenedor indispensable
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+    text-align: center;
+}
+//Formato Imagen
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+//Formato de titulos
+h1, h2, h3 {
+    margin: 0 0 5rem 0;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+
+//Formato de Ligas
+a {
+    text-decoration: none;
+}
+//Formato de Parrafos
+p{
+    font-size: 1.6rem;
+    color: black;
+    line-height: 1.5;
+}
+.mayuscula {
+    text-transform: uppercase;
+}

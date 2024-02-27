@@ -1,0 +1,60 @@
+@use './base/variables' as v;
+@use './base/globales' as g;
+@use './base/mixins' as m;
+
+//Estilos Header, Hero Section
+
+.header {
+    background-image: url(/img/computer.jpg);
+    height: 500px;
+    padding: 5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow:1px 1px 7px v.$negro; 
+    border-radius: .5rem;
+
+    h1 {
+        font-size: 5.9rem;
+        color: v.$principal;
+        text-shadow:-1px 2px 7px v.$secundario; 
+        text-decoration-line: overline;        
+        margin: 0;
+        padding-bottom: .5rem;
+    }
+
+    span  {  
+        color: white;        
+        font-size: 1.6rem;
+    }
+
+    .alinear {
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;                      
+    }    
+    
+
+    @include m.tablet {
+        .alinear {                                                 
+            align-items: end; 
+            padding-top: 5rem;             
+        } 
+    }
+
+    .logo {             
+        width: 13rem;
+        max-width: 20rem;                
+        height: auto;
+        display: block;
+        align-content: center;
+        box-shadow: 4px 5px 7px .5px v.$secundario; 
+        border-radius: 2.5%;
+        image-rendering: -webkit-optimize-contrast;;
+        
+    }
+}

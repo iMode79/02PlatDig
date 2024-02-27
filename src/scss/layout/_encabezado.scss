@@ -1,0 +1,60 @@
+@use './base/variables' as v;
+@use './base/globales' as g;
+@use './base/mixins' as m;
+
+//Estilos Navegación
+
+.encabezado {
+    display: flex;
+    height: 16rem;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    .icono {
+        width: 22rem;
+        height: 15rem;
+        padding-top: 2rem;
+    }
+
+    .GitHub {
+        background: linear-gradient(v.$secundario, v.$secundario2); 
+        padding: 2rem;
+        color: white;
+        font-size: medium;
+    }
+
+    a {
+        display: block;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+        font-weight: normal; 
+        color: v.$principal;
+        border-radius: 10rem;
+        margin-left: 1rem;
+        margin-right: 1rem;            
+    }
+    a:hover {
+        //background-color: v.$secundario2;
+        color: v.$secundario;
+        transition: 250ms;
+    }
+
+    .navegacion_git {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
+    @include m.tablet {
+        .navegacion {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center; 
+            gap: 2rem;
+        }
+    }
+}

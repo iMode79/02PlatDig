@@ -1,0 +1,22 @@
+@use './base/variables' as v;
+@use './base/globales' as g;
+@use './base/mixins' as m;
+
+.servicio {
+    padding-top: 3.1rem;
+    text-align: left;
+    h2 {
+        text-align: center;
+        margin: 0;
+        color: v.$secundario2;
+        text-shadow: 1px 0px 3px v.$principal;
+    }
+    @include m.tablet {       
+        h2 {
+            text-align: left;
+            padding-top: 1rem;
+        }
+    }
+}
+
+
