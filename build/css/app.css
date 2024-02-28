@@ -482,16 +482,13 @@ template {
   }
 }
 
-.lorem {
-  padding: 10rem;
-}
-
 .servicios {
   background-color: #fafafa;
   text-align: center;
   padding-top: 2rem;
 }
 .servicios h2 {
+  padding-top: 2rem;
   text-align: center;
   margin: 0;
   color: #3b619a;
@@ -534,4 +531,15 @@ template {
 }
 .bgservicios .contenedor2 p {
   padding: 10px 50px 20px;
+}
+
+.lorem {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .lorem {
+    padding: 8rem;
+  }
 }

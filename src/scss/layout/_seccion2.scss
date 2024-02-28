@@ -1,0 +1,15 @@
+@use './base/variables' as v;
+@use './base/globales' as g;
+@use './base/mixins' as m;
+
+
+.lorem {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@include m.tablet {
+    .lorem {
+        padding: 8rem;
+    }
+}
