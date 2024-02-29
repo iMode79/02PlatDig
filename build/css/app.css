@@ -17,6 +17,7 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   text-align: center;
+  align-items: center;
 }
 
 img {
@@ -363,6 +364,81 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #3b619a;
+}
+
+.formulario {
+  background: linear-gradient(#d4cfcf, #3b619a);
+  width: min(60rem, 100%);
+  margin: 0 auto;
+  border-radius: 2rem;
+  padding: 2rem;
+  padding-bottom: 2rem;
+}
+
+.formulario legend {
+  text-align: center;
+  color: #3b619a;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  width: min(60rem, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+fieldset {
+  text-align: start;
+  width: min(60rem, 100%);
+  display: block;
+  border: none;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  padding-block-start: 0.35em;
+  padding-block-end: 0.75em;
+  min-inline-size: min-content;
+}
+
+.campo {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.input-text {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  color: #0b2246;
+}
+
+.boton {
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  width: 100%;
+  border: none;
+  transition: 500ms;
+}
+
+.boton:hover {
+  cursor: pointer;
+  background-color: #3b619a;
+  color: #d4cfcf;
+  transition: 900ms;
 }
 
 .header {

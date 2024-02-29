@@ -1,0 +1,76 @@
+@use './base/variables' as v;
+@use './base/globales' as g;
+@use './base/mixins' as m;
+
+
+
+h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: v.$secundario2;
+}
+.formulario{
+    background: linear-gradient(v.$secundario, v.$secundario2); 
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    border-radius: 2rem;
+    padding: 2rem; 
+    padding-bottom: 2rem;   
+}
+.formulario legend {
+    text-align: center;
+    color: v.$secundario2;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    //border-radius: 1rem;
+    //background-color: v.$secundario2;
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+}
+fieldset{
+    text-align: start;
+    width: min(60rem, 100%);
+    display: block;
+    border: none;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-block-end: 0.75em;
+    min-inline-size: min-content;
+}
+.campo {
+    margin-bottom: 1rem;
+    color: v.$blanco;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    color: v.$principal;
+}
+.boton {
+    background-color: transparent;
+    color: v.$blanco;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 100%;
+    border: none;
+    transition: 500ms;
+}
+.boton:hover{
+    cursor: pointer;
+    //background:linear-gradient(v.$secundario, v.$secundario2); 
+    background-color: v.$secundario2;
+    color: v.$secundario;    
+    transition: 900ms;
+}
