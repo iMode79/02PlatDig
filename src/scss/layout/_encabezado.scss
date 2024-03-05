@@ -5,16 +5,10 @@
 //Estilos Navegación
 
 .encabezado {
-    display: flex;
-    height: 16rem;
-    flex-direction: row;
-    justify-content: space-between;
+    //display: flex;
+    height: 24rem;
+    padding-top: 2rem;
 
-    .logoflex, .navegacion_git {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
     .icono {
         max-width: 15rem;
         max-height: 20rem;
@@ -23,8 +17,7 @@
     }
 
     .GitHub {
-        background: linear-gradient(v.$secundario, v.$secundario2); 
-        //padding: 1rem;
+        background: linear-gradient(v.$secundario, v.$secundario2);
         color: white;
         font-size: 1.1rem;
     }
@@ -45,15 +38,23 @@
         color: v.$secundario;
         transition: 250ms;
     }
-
+}
     @include m.tablet {
+        .encabezado {
+            display: flex;
+            height: 25rem;
+            padding-top: 4rem;
+            flex-direction: row;
+            justify-content: space-evenly;        
+        
         .navegacion {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center; 
             gap: 2rem;
-        }       
+        }     
+        
         .icono {
             max-width: 20rem;
             max-height: 15rem;
