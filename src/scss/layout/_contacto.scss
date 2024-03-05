@@ -3,33 +3,54 @@
 @use './base/mixins' as m;
 
 
+.serviciosbg{
+    background-image: url(../../img/contacto2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    max-width: auto;
+    text-align: center;
+    padding: 4rem;
+}
 
 h3 {
     font-size: 3rem;
     text-transform: uppercase;
-    color: v.$secundario2;
+    color: v.$secundario;
+    text-shadow: 1px 0px 3px v.$principal;
 }
-.formulario{
-    background: linear-gradient(v.$secundario, v.$secundario2); 
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor {
+    padding-bottom: 4rem;
+}
+.formulario{    
+    border: solid;
+    border-color: v.$blanco;    
     width: min(60rem, 100%);
     margin: 0 auto;
     border-radius: 2rem;
     padding: 2rem; 
     padding-bottom: 2rem;   
 }
-.formulario legend {
+legend {    
+    text-shadow: 1px 0px 3px v.$principal;
     text-align: center;
-    color: v.$secundario2;
+    color: v.$secundario;
     font-weight: 700;
     text-transform: uppercase;
     box-sizing: border-box;
-    //border-radius: 1rem;
-    //background-color: v.$secundario2;
     width: min(60rem, 100%);
     margin: 0 auto;
     padding: 2rem;
+    
 }
 fieldset{
+    font-size: 2rem;
     text-align: start;
     width: min(60rem, 100%);
     display: block;
@@ -41,36 +62,39 @@ fieldset{
     min-inline-size: min-content;
 }
 .campo {
+    text-shadow: 1px 0px 3px v.$principal;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: v.$blanco;
+    color: v.$secundario;    
     font-weight: 700;
     text-transform: uppercase;
 }
 .input-text {
+    opacity: .5;
     width: 100%;
     border: none;
     padding: 1.5rem;
     border-radius: 1.5rem;
-    color: v.$principal;
+    color: v.$negro;
 }
 .boton {
-    background-color: transparent;
+    background: linear-gradient(v.$secundario, v.$secundario2); 
     color: v.$blanco;
-    padding: 1rem 3rem;
-    margin-top: 1rem;
+    padding: 1rem;
+    margin-top: 4rem;
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    border-radius: .5rem;
+    border-radius: 10rem;
     width: 100%;
     border: none;
     transition: 500ms;
+    opacity: .7;
 }
 .boton:hover{
     cursor: pointer;
-    //background:linear-gradient(v.$secundario, v.$secundario2); 
-    background-color: v.$secundario2;
-    color: v.$secundario;    
+    color: v.$secundario;
+    opacity: 1;
     transition: 900ms;
 }

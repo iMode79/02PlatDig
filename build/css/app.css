@@ -366,14 +366,37 @@ template {
   display: none;
 }
 
+.serviciosbg {
+  background-image: url(../../img/contacto2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  max-width: auto;
+  text-align: center;
+  padding: 4rem;
+}
+
 h3 {
   font-size: 3rem;
   text-transform: uppercase;
-  color: #3b619a;
+  color: #d4cfcf;
+  text-shadow: 1px 0px 3px #0b2246;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor {
+  padding-bottom: 4rem;
 }
 
 .formulario {
-  background: linear-gradient(#d4cfcf, #3b619a);
+  border: solid;
+  border-color: #fff;
   width: min(60rem, 100%);
   margin: 0 auto;
   border-radius: 2rem;
@@ -381,9 +404,10 @@ h3 {
   padding-bottom: 2rem;
 }
 
-.formulario legend {
+legend {
+  text-shadow: 1px 0px 3px #0b2246;
   text-align: center;
-  color: #3b619a;
+  color: #d4cfcf;
   font-weight: 700;
   text-transform: uppercase;
   box-sizing: border-box;
@@ -393,6 +417,7 @@ h3 {
 }
 
 fieldset {
+  font-size: 2rem;
   text-align: start;
   width: min(60rem, 100%);
   display: block;
@@ -405,39 +430,43 @@ fieldset {
 }
 
 .campo {
+  text-shadow: 1px 0px 3px #0b2246;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #fff;
+  color: #d4cfcf;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .input-text {
+  opacity: 0.5;
   width: 100%;
   border: none;
   padding: 1.5rem;
   border-radius: 1.5rem;
-  color: #0b2246;
+  color: #000;
 }
 
 .boton {
-  background-color: transparent;
+  background: linear-gradient(#d4cfcf, #3b619a);
   color: #fff;
-  padding: 1rem 3rem;
-  margin-top: 1rem;
+  padding: 1rem;
+  margin-top: 4rem;
   font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  border-radius: 0.5rem;
+  border-radius: 10rem;
   width: 100%;
   border: none;
   transition: 500ms;
+  opacity: 0.7;
 }
 
 .boton:hover {
   cursor: pointer;
-  background-color: #3b619a;
   color: #d4cfcf;
+  opacity: 1;
   transition: 900ms;
 }
 
@@ -447,6 +476,7 @@ fieldset {
   padding: 5rem;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -499,8 +529,10 @@ fieldset {
   justify-content: center;
 }
 .encabezado .icono {
-  max-width: 20rem;
-  max-height: 15rem;
+  max-width: 15rem;
+  max-height: 20rem;
+  position: absolute;
+  opacity: 0;
 }
 .encabezado .GitHub {
   background: linear-gradient(#d4cfcf, #3b619a);
@@ -533,6 +565,8 @@ fieldset {
   .encabezado .icono {
     max-width: 20rem;
     max-height: 15rem;
+    opacity: 1;
+    position: relative;
   }
   .encabezado .GitHub {
     background: linear-gradient(#d4cfcf, #3b619a);
@@ -584,7 +618,6 @@ fieldset {
   }
 }
 .bgservicios .contenedor2 {
-  padding-top: 1rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
   max-height: 85rem;

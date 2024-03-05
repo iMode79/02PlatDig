@@ -16,9 +16,10 @@
         justify-content: center;
     }
     .icono {
-        max-width: 20rem;
-        max-height: 15rem;
-        //padding-top: 2rem;        
+        max-width: 15rem;
+        max-height: 20rem;
+        position: absolute;
+        opacity: 0;      
     }
 
     .GitHub {
@@ -56,6 +57,8 @@
         .icono {
             max-width: 20rem;
             max-height: 15rem;
+            opacity: 1; 
+            position: relative;
             //padding-top: 2rem;        
         }
         .GitHub {
