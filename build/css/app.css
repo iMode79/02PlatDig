@@ -402,6 +402,7 @@ h3 {
   border-radius: 2rem;
   padding: 2rem;
   padding-bottom: 2rem;
+  box-shadow: 1.5px 1px 4px 0.5px #0b2246;
 }
 
 legend {
@@ -475,6 +476,7 @@ fieldset {
   max-width: 100%;
   height: 500px;
   padding: 5rem;
+  object-fit: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -501,7 +503,7 @@ fieldset {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 880px) {
   .header .alinear {
     align-items: end;
     padding-top: 5rem;
@@ -531,7 +533,7 @@ fieldset {
 .encabezado .GitHub {
   background: linear-gradient(#d4cfcf, #3b619a);
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 .encabezado a {
   display: block;
@@ -549,7 +551,7 @@ fieldset {
   transition: 250ms;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 880px) {
   .encabezado {
     display: flex;
     height: 25rem;
@@ -576,8 +578,16 @@ fieldset {
     font-size: 1.5rem;
   }
 }
+h2 {
+  padding-top: 2rem;
+  text-align: center;
+  margin: 0;
+  color: #3b619a;
+  text-shadow: 1px 0px 3px #0b2246;
+}
+
 .servicio {
-  padding-top: 3.1rem;
+  padding-top: 1.5rem;
   text-align: left;
 }
 .servicio h2 {
@@ -586,11 +596,18 @@ fieldset {
   color: #3b619a;
   text-shadow: 1px 0px 3px #0b2246;
 }
-@media (min-width: 768px) {
+@media (min-width: 880px) {
   .servicio h2 {
     text-align: left;
     padding-top: 1rem;
   }
+}
+
+.footer {
+  padding-top: 2rem;
+}
+.footer p {
+  font-size: 1rem;
 }
 
 .servicios {
@@ -599,7 +616,7 @@ fieldset {
   padding-top: 2rem;
 }
 .servicios h2 {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   text-align: center;
   margin: 0;
   color: #3b619a;
@@ -611,7 +628,7 @@ fieldset {
   border-radius: 1rem;
   padding-bottom: 1rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 880px) {
   .bgservicios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -648,7 +665,7 @@ fieldset {
   padding-bottom: 2rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 880px) {
   .lorem {
     padding: 8rem;
   }

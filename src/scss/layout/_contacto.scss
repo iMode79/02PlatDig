@@ -36,6 +36,7 @@ h3 {
     border-radius: 2rem;
     padding: 2rem; 
     padding-bottom: 2rem;   
+    box-shadow: 1.5px 1px 4px .5px v.$principal; 
 }
 legend {    
     text-shadow: 1px 0px 3px v.$principal;

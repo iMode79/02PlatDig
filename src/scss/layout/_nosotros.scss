@@ -2,8 +2,16 @@
 @use './base/globales' as g;
 @use './base/mixins' as m;
 
+
+h2 {
+    padding-top: 2rem;
+    text-align: center;
+    margin: 0;
+    color: v.$secundario2;
+    text-shadow: 1px 0px 3px v.$principal;
+}
 .servicio {
-    padding-top: 3.1rem;
+    padding-top: 1.5rem;
     text-align: left;
     h2 {
         text-align: center;
@@ -19,4 +27,9 @@
     }
 }
 
-
+.footer {
+    padding-top: 2rem;
+    p {
+        font-size: 1rem;        
+    }
+}
