@@ -8,20 +8,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="build/css/app.css">
-    <link rel="icon" type="image/png" href="/img/icono.png">
+    <link rel="icon" type="image/png" href="/src/img/icono.png">
+    <meta name="robots" content="noindex"/>
+    <meta name="description" content="Pagina de practica para diseño web corporativo">
 </head>
 <body>
 
     <div class="encabezado contenedor">
 
         <div>
-            <img class="icono" src="img/LogoPD'sV2.png" alt="logo">
+            <picture>
+                <source srcset="/build/img/LogoPD'sV2.avif" type="image/avif">
+                <source srcset="/build/img/LogoPD'sV2.webp" type="image/webp">
+                <img loading="lazy" class="icono" src="/src/img/LogoPD'sV2.png" alt="logo">
+          </picture>            
         </div>
                 
             <nav class="navegacion ">
                 <a href="index.html">Inicio</a><!--el doble guin medio es un modificador-->
-                <a href="#we">Nosotros</a>
                 <a href="#services">Servicios</a>
+                <a href="#we">Nosotros</a>                
                 <a href="#contact">Contáctanos</a>
             </nav>        
 
@@ -32,8 +38,13 @@
     </div>
 
     <Header class="header">
-        <div class="alinear">             
-            <img class="logo" src="img/icono.png" alt="logo">                               
+        <div class="alinear">    
+            <picture>
+                <source srcset="/build/img/icono.avif" type="image/avif">
+                <source srcset="/build/img/icono.webp" type="image/webp">
+                <img loading="lazy" class="logo" src="/src/img/icono.png" alt="logo">                               
+          </picture>
+            
             <h1>IT Talent Sourcing</h1>
             <span>We navigate your business to build a strong and stable talent base</span>
         </div>        
@@ -68,8 +79,7 @@
                         <p>Nuestros servicio de consultoría, le ayudará al manejo, la innovación y desarrollo de su empresa.</p>                   
                 </div>
         </section>
-        <!--fin de seccion-->
-                
+        <!--fin de seccion-->                
         <section class=" contenedor contenedor2">                      
                 <div class="iconos">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-artboard" width="56" height="56" viewBox="0 0 24 24" stroke-width="1.1" stroke="#3b619a" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -142,41 +152,38 @@
         </section>
         </main>
     
-        <section class="serviciosbg">
-            <h3 id="contact">Contáctanos</h3>
-            <div class="contacto contenedor">
-                <form class="formulario">
-                    <fieldset>
-                        <legend>llena los campos</legend>
+    <section class="serviciosbg">
+        <h3 id="contact">Contáctanos</h3>
+        <div class="contacto contenedor">
+            <form class="formulario">
+                <fieldset>
+                    <legend>llena los campos</legend>
                         
-                        <div class="campo">
+                    <div class="campo">
                         <label>Nombre</label>
                         <input class="input-text" type="text" name="nombre" placeholder="Nombre">
-                        </div>
-                        <div class="campo">
+                    </div>
+                    <div class="campo">
                         <label>Teléfono</label>
                         <input class="input-text" type="tel" placeholder="Teléfono">
-                        </div>
-                        <div class="campo">
+                    </div>
+                    <div class="campo">
                         <label>E-Mail</label>
                         <input  class="input-text" type="email" placeholder="E-Mail">
                         <div>
-                        <input class="boton" type="submit" value="Enviar">
+                            <input class="boton" type="submit" value="Enviar">
                         </div>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-        </section>
-
-
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    
     <footer class="contenedor footer">
         <p>© 2020-2023 Plataformas Digitales (A Smart IT Company). All rights reserved</p>
         <p>Consultoria y Soluciones IT. (A Smart IT Company) - México </p>
         <p>Estado de Mëxico    Lomas verdes    57432</p>
     </footer>
-
-
 
 </body>
 </html>

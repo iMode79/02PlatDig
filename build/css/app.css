@@ -367,7 +367,7 @@ template {
 }
 
 .serviciosbg {
-  background-image: url(../../img/contacto2.jpg);
+  background-image: image-set(url("../../build/img/contacto2.avif") type("image/avif"), url("../../build/img/contacto2.webp") type("image/webp"), url("../../build/img/contacto2.jpg") type("image/jpg"));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -472,7 +472,7 @@ fieldset {
 }
 
 .header {
-  background-image: url(../../img/computer.jpg);
+  background-image: image-set(url("../../build/img/computer.avif") type("image/avif"), url("../../build/img/computer.webp") type("image/webp"), url("../../build/img/computer.jpg") type("image/jpg"));
   max-width: 100%;
   height: 500px;
   padding: 5rem;
