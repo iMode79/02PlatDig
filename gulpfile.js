@@ -23,8 +23,7 @@ function css (done) {
         .pipe(plumber())
         .pipe(sass())
         .pipe(postcss([autoprefixer(), cssnano()]))
-        .pipe(sourcemaps.write('.'))
-        .pipe(sourcemaps.write('.'))
+        .pipe(sourcemaps.write('.'))        
         .pipe(dest('build/css'))
     done();
 }
@@ -61,7 +60,8 @@ function versionAvif (done) {
 //Funcion para JavaScript
 function javaScript (done) {
     src ('src/js/*.js')
-    .pipe ( dest ( 'build/js' ) );
+
+    .pipe ( dest ( 'build/js' ) )
     done();
 }
 //Funcion para el dev del gulpfile (mantener la compilación escuchando)

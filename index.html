@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="build/css/app.css">
-    <link rel="icon" type="image/png" href="/src/img/icono.png">
+    <link rel="icon" type="image/png" href="build/img/icono.png">
     <meta name="robots" content="noindex"/>
     <meta name="description" content="Pagina de practica para diseño web corporativo">
 </head>
@@ -155,25 +155,29 @@
     <section class="serviciosbg">
         <h3 id="contact">Contáctanos</h3>
         <div class="contacto contenedor">
-            <form class="formulario">
+            <form id="form" class="formulario">
                 <fieldset>
                     <legend>llena los campos</legend>
                         
                     <div class="campo">
                         <label>Nombre</label>
-                        <input class="input-text" type="text" name="nombre" placeholder="Nombre">
+                        <input id="nombre" class="input-text" type="text" name="nombre" placeholder="Nombre">
                     </div>
                     <div class="campo">
                         <label>Teléfono</label>
-                        <input class="input-text" type="tel" placeholder="Teléfono">
+                        <input id="telefono" class="input-text" type="tel" placeholder="Teléfono">
                     </div>
                     <div class="campo">
                         <label>E-Mail</label>
-                        <input  class="input-text" type="email" placeholder="E-Mail">
-                        <div>
-                            <input class="boton" type="submit" value="Enviar">
-                        </div>
+                        <input id="mail" class="input-text" type="email" placeholder="E-Mail">
                     </div>
+                    <div class="campo">
+                        <label>Mensaje</label>
+                        <textarea id="mensaje" class="input-text" type="text" placeholder="Mensaje"></textarea>
+                    </div>
+                    <div>
+                        <input class="boton" type="submit" value="Enviar">
+                    </div>        
                 </fieldset>
             </form>
         </div>
