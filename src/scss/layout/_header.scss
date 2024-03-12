@@ -38,7 +38,6 @@
 
     .alinear {
         display: flex;
-        
         flex-direction: column;
         justify-content: center;
         align-items: center;                      
@@ -47,7 +46,7 @@
 
     @include m.tablet {
         .alinear {                                                 
-            align-items: end; 
+            align-items: start; 
             padding-top: 5rem;             
         } 
     }

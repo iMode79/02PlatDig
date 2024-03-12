@@ -37,15 +37,11 @@ formulario.addEventListener('submit' ,function (evento){
     datos.mail = '';
     datos.mensaje = '';
     formulario.reset();
-    /*console.log('mensaje enviado');
-    */
-
 });
 
 function leertexto (e) {
     datos [e.target.id] = e.target.value;
 }
-
 
 function alerta (mensaje, error = null) {
     const aviso = document.createElement('P');
