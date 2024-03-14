@@ -2,9 +2,6 @@
 @use './base/globales' as g;
 @use './base/mixins' as m;
 
-
-
-
 .servicios {
     background-color: #fafafa;
     text-align: center;
@@ -41,20 +38,23 @@
         border-radius: .5rem;
         display: block;
         
-        .icon {
+        .iconos {
+            margin-top: 2rem;;
+        }
+        /*.icon {
             filter: drop-shadow(1px 0px 2px v.$principal);
             stroke: v.$secundario2;
-            padding-top: 2rem;
-        }
+          */
+
         h3 {
             color: v.$secundario2;
             text-shadow: 1px 0px 3px v.$principal;
+            padding-top: 3rem;
         }        
         p {
             padding: 10px 50px 20px;
         }
-    }
-    
+    }    
 }
 
 

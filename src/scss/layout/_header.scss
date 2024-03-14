@@ -3,7 +3,6 @@
 @use './base/mixins' as m;
 
 //Estilos Header, Hero Section
-
 .header {
     background-image: image-set(
         url("../../build/img/computer.avif") type('image/avif'),
@@ -59,7 +58,6 @@
         align-content: center;
         box-shadow: 4px 5px 7px .5px v.$secundario; 
         border-radius: 2.5%;
-        image-rendering: -webkit-optimize-contrast;;
-        
+        image-rendering: -webkit-optimize-contrast;;        
     }
 }

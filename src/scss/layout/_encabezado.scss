@@ -2,11 +2,23 @@
 @use './base/globales' as g;
 @use './base/mixins' as m;
 
+
 //Estilos Navegación
+.bgencabezado{
+    background-color: black;
+}
 .encabezado {
-    //display: flex;
-    height: 24rem;
-    padding-top: 2rem;
+    background-color: #fafafa;
+    height: 21rem;
+    padding-top: 1rem;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+
 
     .icono {
         max-width: 15rem;
@@ -42,10 +54,14 @@
     @include m.tablet {
         .encabezado {
             display: flex;
-            height: 25rem;
-            padding-top: 4rem;
+            height: 19.5rem;
+            width: 100%;            
             flex-direction: row;
-            justify-content: space-evenly;        
+            justify-content: space-evenly;               
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
         
             .navegacion {
                 display: flex;
